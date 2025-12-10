@@ -1,5 +1,6 @@
 import flet as ft
 from main import get_weather
+import os
 
 def main(page: ft.Page):
 
@@ -75,4 +76,5 @@ def main(page: ft.Page):
         t_result
     )
 
-ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+os.environ["LIBGL_ALWAYS_SOFTWARE"] = "1"
+ft.app(target=main)
