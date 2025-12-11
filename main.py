@@ -40,10 +40,3 @@ def get_weather(city_name):
     except requests.exceptions.RequestException as err:
         print(f"Backend: Connection error: {err}")
         return None
-
-
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()
